@@ -548,10 +548,10 @@ img {
   align-items: center;
   justify-content: center;
 }
-.overlay.is-open {
+/* .overlay.is-open {
   opacity: 1;
   pointer-events: auto;
-}
+} */
 .modal {
   width: 408px;
   min-height: 584px;
