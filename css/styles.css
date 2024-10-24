@@ -506,14 +506,15 @@ img {
   padding-left: 16px;
   padding-top: 8px;
 }
-.input-wrapper-footer {
-  position: relative;
-}
 
 .footer-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: #4d5ae5;
 
@@ -524,15 +525,15 @@ img {
   text-align: center;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 .footer-icon-subscribe {
-  position: absolute;
+  margin-left: 16px;
 }
-.field-footer {
+
+.form-footer {
   display: flex;
   gap: 24px;
-  align-items: center;
-  justify-content: center;
 }
 
 /* overlay */
