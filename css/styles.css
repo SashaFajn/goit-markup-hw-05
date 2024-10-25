@@ -605,11 +605,17 @@ img {
 .modal-open:focus {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
 }
 .icone-close-button {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-open:hover + .icone-close-button {
+  fill: #ffffff;
+}
+
+.modal-open:focus + .icone-close-button {
+  fill: #ffffff;
 }
 
 .title-overlay {
@@ -641,7 +647,7 @@ img {
   margin-bottom: 4px;
 }
 .modal-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 .input-wrapper {
   position: relative;
@@ -744,4 +750,5 @@ img {
 .privacy-checkbox:checked + .label-privacy span {
   fill: #f4f4fd;
   background-color: #404bbf;
+  border: none;
 }
