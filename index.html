@@ -468,18 +468,20 @@
           <p class="subscribe-footer">Subscribe</p>
 
           <form class="form-footer">
-            <label class="label-input"></label>
-            <input
-              type="email"
-              name="email"
-              placeholder="E-mail"
-              class="input-footer"
-            />
-
-            <button type="button" class="footer-button">Subscribe</button>
-            <svg class="footer-icon-subscribe" width="24" height="24">
-              <use href="./images/icons-second.svg#icon-send"></use>
-            </svg>
+            <label class="label-input">
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                class="input-footer"
+              />
+            </label>
+            <button type="button" class="footer-button">
+              Subscribe
+              <svg class="footer-icon-subscribe" width="24" height="24">
+                <use href="./images/icons-second.svg#icon-send"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -488,7 +490,7 @@
     <div class="overlay">
       <div class="modal">
         <button type="button" class="modal-open">
-          <svg class="close-button" width="8" height="8">
+          <svg class="icone-close-button" width="8" height="8">
             <use href="./images/icons-second.svg#icon-close"></use>
           </svg>
         </button>
@@ -497,9 +499,14 @@
         </p>
         <form>
           <div class="modal-field">
-            <label for="name" class="madal-label"> Name</label>
+            <label for="user-name" class="madal-label"> Name</label>
             <div class="input-wrapper">
-              <input type="text" name="name" id="name" class="input-modal" />
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="input-modal"
+              />
               <svg class="icone-modal" width="18px" height="24px">
                 <use href="./images/icons-second.svg#icon-names"></use>
               </svg>
@@ -526,26 +533,37 @@
             </div>
           </div>
           <div class="modal-field">
-            <label class="madal-label" for="comment ">Comment</label>
+            <label for="user-comment" class="madal-label">Comment</label>
             <textarea
-              id="comment"
-              name="comment"
+              id="user-comment"
+              name="user-comment"
               class="modal-textarea"
               placeholder="Text input"
             ></textarea>
           </div>
-        </form>
-        <form>
-          <div class="container-confirmation">
-            <input type="checkbox" name="confirm" />
-            <p class="modal-confirmation">
-              I accept the terms and conditions of the
-              <a class="modal-link" href="">Privacy Policy</a>
-            </p>
-          </div>
-        </form>
 
-        <button class="button-modal" type="submit">Send</button>
+          <div class="container-confirmation">
+            <input
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+              class="privacy-checkbox visually-hidden"
+            />
+            <label for="user-privacy" class="label-privacy">
+              <span class="span-privacy">
+                <svg class="modal-check-icon" width="10" height="8">
+                  <use href="./images/icons-second.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+
+              <a class="modal-link" href="">Privacy Policy</a>>
+            </label>
+          </div>
+
+          <button class="button-modal" type="submit">Send</button>
+        </form>
       </div>
     </div>
   </body>
